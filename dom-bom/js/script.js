@@ -100,3 +100,20 @@ function obtenerListadoEstudiantes(){
     tabla.appendChild(tbody);
     document.getElementById("cuadro").appendChild(tabla);
 }
+
+function calcularPromedio(){
+    //se recorre el objeto estudiantes
+    var sumatoria = 0;
+    for (var i = 0; i < estudiantes.estudiantes.length; i++) {
+        sumatoria += parseInt(estudiantes.estudiantes[i].nota);
+    }
+    document.getElementById("promedio-nota").innerHTML = (parseInt(sumatoria) / parseInt(estudiantes.estudiantes.length));
+}
+
+function obtenerNotaMayor(){
+
+}
+
+function obtenerNotaMenor(){
+
+}

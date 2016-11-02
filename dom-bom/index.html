@@ -13,7 +13,7 @@
 	    	<h2>Acciones</h2>
 	    	<ul class="nav nav-pills nav-stacked">
 			  <li role="presentation"><a href="" id="enlace-formulario">Registrar Estudiante</a></li>
-			  <li role="presentation"><a href="" id="calcular-nota-promedio">Calcular la nota promedio</a></li>
+			  <li role="presentation"><a href="javascript:void(0);" id="calcular-nota-promedio" onclick="calcularPromedio()">Calcular la nota promedio</a></li>
 			  <li role="presentation"><a href="" id="estudiante-nota-mayor">Estudiante con la nota mayor</a></li>
 			  <li role="presentation"><a href="" id="estudiante-nota-menor">Estudiante con la nota menor</a></li>
 			</ul>
@@ -50,6 +50,11 @@
 			<div id="listado-estudiantes"><!--Listado de Estudiantes -->
 				<h3>Listado de Estudiantes</h3>
 				<div id="cuadro"></div>
+			</div>
+
+			<div id="promedio">
+				<h3>Promedio</h3>
+				<div id="promedio-nota"></div>
 			</div>
 
 	    </div>
