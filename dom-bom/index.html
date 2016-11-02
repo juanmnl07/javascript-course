@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<script type="text/javascript" src="js/script.js"></script>
 </head>
-<body>
+<body onload="obtenerListadoEstudiantes()">
 <div class="container">
 	<h1>DOM / BOM</h1>
 	<div class="row">
@@ -43,13 +43,17 @@
 	    		</form><!--Formulario registro Estudiantes -->
 	    	</div>
 
-			<br>
+	    </div>
+
+		 <div class="col-sm-4">
 
 			<div id="listado-estudiantes"><!--Listado de Estudiantes -->
 				<h3>Listado de Estudiantes</h3>
+				<div id="cuadro"></div>
 			</div>
 
 	    </div>
+
 	</div>
 </div>
 </body>
